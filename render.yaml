@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: seo-analyzer-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: TEXTRAZOR_API_KEY
+        sync: false
+    
+  - type: static
+    name: seo-analyzer-frontend
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: client/dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0 
