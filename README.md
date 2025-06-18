@@ -182,5 +182,6 @@ The application is built with modern web technologies and follows best practices
 - Error handling
 - User experience
 =======
+
 # InsightSEO
 >>>>>>> 450706a8240eef2a082df5eb948ece0173ead967
