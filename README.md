@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SEO Analyzer Web App
 
 A powerful single-page web application that helps content creators optimize their text for search engines. Perfect for analyzing blogs, newsletters, tweets, or social media captions to improve their SEO performance.
@@ -180,3 +181,6 @@ The application is built with modern web technologies and follows best practices
 - Responsive design
 - Error handling
 - User experience
+=======
+# InsightSEO
+>>>>>>> 450706a8240eef2a082df5eb948ece0173ead967
