@@ -9,6 +9,7 @@ services:
         value: 18.17.0
       - key: TEXTRAZOR_API_KEY
         sync: false
+        
     
   - type: static
     name: seo-analyzer-frontend
