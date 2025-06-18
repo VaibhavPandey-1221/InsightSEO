@@ -101,7 +101,7 @@ function App() {
      <div className="container">
       {/* Page header */}
       <header className="header">
-        <h1>SEO Analyzer Web App</h1>
+        <h1>InsightSEO</h1>
         <p className="subtitle">Get SEO suggestions at your fingertips and boost your text's SEO power</p>
       </header>
 

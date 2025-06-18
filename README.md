@@ -16,6 +16,17 @@ A powerful single-page web application that helps content creators optimize thei
   - Based on Flesch Reading Ease formula
   - Helps make content more accessible
 
+
+### Grammer Check
+- 📊 Detailed Grammer correction
+  - Automated Grammar and Spelling Suggestions
+  - Spelling mistakes detection
+  - Grammar errors like verb agreement, punctuation, etc.
+  - Suggestions for correction with brief explanations
+  - Highlights incorrect phrases or sentences
+  - Sentence structure improvement tips
+
+
 ### Keyword Tools
 - 🔑 Intelligent Keyword Analysis
   - Identifies most relevant keywords
@@ -119,20 +130,34 @@ Application opens at http://localhost:3000
 ## 📁 Project Structure
 
 ```
-seo-analyzer-app/
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── App.jsx        # Main application component
-│   │   ├── App.css        # Application styles
-│   │   └── index.js       # Entry point
-│   ├── public/            # Static files
-│   └── package.json       # Frontend dependencies
-│
-├── server/                # Backend Node.js server
-│   ├── index.js          # Server implementation
-│   └── package.json      # Backend dependencies
-│
-└── README.md             # Project documentation
+seo-analyzer-web-app/
+├── README.md                            # Project Documentation
+├── package.json
+├── render.yaml
+├── client                               # Frontend React Application
+│   ├── README.md
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json                     # Frontend dependencies
+│   ├── vite.config.js
+│   ├── public                           # static files
+│   │   ├── leftsvg.svg
+│   │   ├── rightsvg.svg
+│   │   └── vite.svg
+│   └── src
+│       ├── App.css                      # Application styles
+│       ├── App.jsx                      # Main application component
+│       ├── assets        
+│       ├── config.js
+│       ├── index.css                    
+│       └── main.jsx
+└── server                               # Backend Node.js server
+    ├── index.js                         # Server Implementation
+    ├── package-lock.json
+    ├── package.json                     # Backend dependencies
+    └── routes
+        └── nlp.js
 ```
 
 ## 🛠️ API Endpoints
@@ -141,6 +166,7 @@ seo-analyzer-app/
 - Analyzes submitted text
 - Returns SEO metrics and suggestions
 - Provides keyword recommendations
+- Check for any possible grammatical corrections
 
 ### POST /insert-keyword
 - Handles keyword insertion
@@ -154,11 +180,3 @@ The application is built with modern web technologies and follows best practices
 - Responsive design
 - Error handling
 - User experience
-
-## 🤝 Contributing
-
-Feel free to:
-- Submit bug reports
-- Propose new features
-- Improve documentation
-
