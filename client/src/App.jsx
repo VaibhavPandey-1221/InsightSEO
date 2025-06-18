@@ -16,6 +16,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   // Store any error messages
   const [error, setError] = useState('');
+  
 
   const [grammarSuggestions, setGrammarSuggestions] = useState([]);
 
