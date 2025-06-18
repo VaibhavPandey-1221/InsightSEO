@@ -7,6 +7,7 @@ require("dotenv").config();
 const nlpRoutes = require('./routes/nlp'); // 👈 import your NLP route file
 
 
+
 // Create the server app
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(cors());
 // Accept JSON data up to 50MB
 app.use(express.json({ limit: '50mb' }));
 
-app.use('/api/nlp', nlpRoutes); // 👈 route prefix
+app.use('/api/nlp',  nlpRoutes);                  // 👈 route prefix
 
 
 // TextRazor API configuration
@@ -38,6 +39,7 @@ function extractKeywordsLocally(text) {
     if (word.length > 2 && !stopWords.has(word)) {
       wordFreq[word] = (wordFreq[word] || 0) + 1;
     }
+    
   });
   
   // Sort words by how often they appear and take the top 10
@@ -127,6 +129,7 @@ async function analyzeWithTextRazor(text) {
       }
     });
 
+    
     // Calculate basic stats
     const words = text.split(/\s+/).filter(Boolean);
     const sentences = text.split(/[.!?]+/).filter(Boolean);
