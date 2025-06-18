@@ -19,6 +19,7 @@ router.post('/check-grammar', (req, res) => {
       return res.status(500).json({ error: 'Grammar check failed' });
     }
     res.json({ matches: result.matches });
+    
   });
 });
 
